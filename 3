@@ -1,0 +1,46 @@
+#include<iostream>u
+sing namespace std;
+
+int main()
+{ 
+double hired_m,hired_f, permanent_m, permanent_f,resigned_m, resigned_f, total_hired, total_permanent, total_resigned;
+
+cout<< "Enter the number of newly hired males: ";
+cin>> hired_m; 
+
+cout<< "\nEnter the number of newly hired females: ";
+cin>> hired_f;
+
+cout<< "\nEnter the number of permanent position males: ";
+cin>> permanent_m; 
+
+cout<< "\n Enter the number of permanent position females: ";
+cin>> permanent_f;
+cout<< "\nEnter the number of resigned males: "; 
+cin>> resigned_m; 
+
+cout<< "\nEnter the number of resigned females: ";
+cin>> resigned_f; 
+cout<<"\nThank for the information"<<endl; 
+cout<< "\nHere is the summary!\n";  
+cout<< "\nNumber of hired employee = ";
+total_hired = hired_m + hired_f;
+cout<< total_hired;  
+cout<< "\nMale = "; 
+cout<< printf("%.2f",(hired_m / total_hired) * 100.0) << "%"; 
+cout<< "\nFemale = "; 
+cout<< printf("%.2f",(hired_f / total_hired) * 100.0) << "%"<<endl;  
+cout<< "\nNumber of Permanent employee = "; 
+total_permanent = permanent_f + permanent_m; 
+cout<< total_permanent;  cout<< "\nMale = "; 
+cout<< printf("%.2f",(permanent_m / total_permanent) * 100.0) <<"%"; 
+cout<< "\nFemale = "; 
+cout<< printf("%.2f",(permanent_f / total_permanent) * 100.0)<< "%"<<endl; 
+cout<< "\nNumber of Resigned Employee = "; 
+total_resigned = resigned_m + resigned_f;
+cout<< total_resigned <<endl;  
+cout<< "Male = " << printf("%.2f",(resigned_m / total_resigned) * 100.0)<< "%" <<endl; 
+cout<< "FemalCompilee = " << printf("%.2f",(resigned_f / total_resigned) *100.0) <<"%" <<endl;    
+
+return 0;
+}
