@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   int num[9] = {5, 1, 4, 6, 7, 3, 5, 7, 3};
+   int i, j;
+   int size = sizeof(num)/sizeof(num[0]);
+   
+   cout <<"Array: ";
+    for(i=0; i < size; i++)
+    cout<< num[i] << " ";
+    cout<<"\nDuplicate elements: ";
+    
+    for(i=0; i< size; i++)
+        for(j= i+1; j < size; j++)
+            if(num[i] == num[j])
+                cout<< num[i] << " ";
+    
+    return 0;
+}
